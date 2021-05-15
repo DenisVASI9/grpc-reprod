@@ -1,0 +1,14 @@
+syntax = "proto3";
+package mservice;
+
+service MService {
+  rpc sayHelloFromRpc(Name) returns (Message);
+}
+
+message Name {
+  string name = 1;
+}
+
+message Message {
+  string message = 1;
+}
